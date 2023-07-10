@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My First Website</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <script src="code.js"></script>
+  <div class="buttons">
+    <div class="box">
+      <span id="content"> </span>
+    </div>
+
+    <div>
+      <button id="C">C</button>
+      <button id="arrow">&larr;</button>
+      <button id="plus">&plus;</button>
+    </div>
+    <button id="seven">7</button>
+    <button id="six">6</button>
+    <button id="nine">9</button>
+    <button id="minus">&minus;</button>
+
+    <div>
+      <button id="four">4</button>
+      <button id="five">5</button>
+      <button id="six2">6</button>
+      <button id="multiply">&times;</button>
+    </div>
+
+    <div>
+      <button id="one">1</button>
+      <button id="two">2</button>
+      <button id="three">3</button>
+      <button id="divide">&divide;</button>
+    </div>
+    <button id="zero">0</button>
+    <button id="equals">=</button>
+  </div>
+
+  <script>
+    // Event listeners for each button
+    function removeContent() {
+      var contentElement = document.getElementById('content');
+      contentElement.innerHTML = '';
+}
+    document.getElementById('C').addEventListener('click', function() {
+      removeContent();
+    });
+
+    document.getElementById('arrow').addEventListener('click', function() {
+      removeContent();
+    });
+
+    document.getElementById('plus').addEventListener('click', function() {
+      appendContent('+');
+    });
+
+    document.getElementById('seven').addEventListener('click', function() {
+      appendContent('7');
+    });
+
+    document.getElementById('six').addEventListener('click', function() {
+      appendContent('6');
+    });
+
+    document.getElementById('nine').addEventListener('click', function() {
+      appendContent('9');
+    });
+
+    document.getElementById('minus').addEventListener('click', function() {
+      appendContent('-');
+    });
+
+    document.getElementById('four').addEventListener('click', function() {
+      appendContent('4');
+    });
+
+    document.getElementById('five').addEventListener('click', function() {
+      appendContent('5');
+    });
+
+    document.getElementById('six2').addEventListener('click', function() {
+      appendContent('6');
+    });
+
+    document.getElementById('multiply').addEventListener('click', function() {
+      appendContent('*');
+    });
+
+    document.getElementById('one').addEventListener('click', function() {
+      appendContent('1');
+    });
+
+    document.getElementById('two').addEventListener('click', function() {
+      appendContent('2');
+    });
+
+    document.getElementById('three').addEventListener('click', function() {
+      appendContent('3');
+    });
+
+    document.getElementById('divide').addEventListener('click', function() {
+      appendContent('/');
+    });
+
+    document.getElementById('zero').addEventListener('click', function() {
+      appendContent('0');
+    });
+
+    document.getElementById('equals').addEventListener('click', function() {
+      calculate();
+    });
+
+    // Function to append content to the white box
+    function appendContent(content) {
+      document.getElementById('content').innerHTML += content;
+    }
+
+    // Function to calculate and update the white box
+    function calculate() {
+      var expression = document.getElementById('content').innerHTML;
+      var result = eval(expression);
+      document.getElementById('content').innerHTML = result;
+    }
+  </script>
+
+  <style>
+
+  </style>
+</body>
+</html>

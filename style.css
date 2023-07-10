@@ -1,0 +1,82 @@
+body {
+    justify-content:center;
+    
+    background: linear-gradient(320deg,#eb92be, #ffef78, #63c9b4);
+    display: flex;
+    height: 1789px;
+    position: relative;
+    top: 360px;
+    left: 350;
+    font: size 200px;
+  }
+  .buttons {
+    box-sizing: border-box;
+    width: 355px;
+    height: 445px;
+    backdrop-filter: blur(5.5px);
+    -webkit-backdrop-filter: blur(5.5px);
+    background-color: rgba(255, 255, 255, 0.30); /* set the background to a transparent white color */
+    border: 1px solid rgba(255, 255, 255, 0.01);
+    border-radius: 16px;
+
+  }
+.box {
+    position: relative;
+    top: 12px;
+    left: 30px;
+    height: 47px;
+    width: 285px;
+    font-size: 40px;
+    display: flex;
+    border: white;
+    border-radius: 16px;
+    background-color:  rgba(255, 255, 255, 0.75);
+    
+    
+    
+    
+}
+.buttons button {
+    position: relative;
+    top: 20px;
+    left: 30px;
+    margin: 3px;
+    height: 65px;
+    width: 65px;
+    border: white;
+    border-radius: 16px;
+    background-color:  rgba(255, 255, 255, 0.75);
+    
+  }
+#plus {
+  position: relative;
+  background-color: palevioletred;
+}
+#minus {
+  position: relative;
+  left: 25px;
+  background-color: palevioletred;
+}
+#multiply {
+  position: relative;
+  left: 25px;
+  background-color: palevioletred;
+}
+#divide {
+  position: relative;
+  left: 25px;
+  background-color: palevioletred;
+}
+#zero {
+  position: relative;
+  width: 215px;
+}
+#equals {
+  position: relative;
+  left: 25px;
+  background-color: palevioletred;
+}
+#C {
+  position: relative;
+  width: 135px;
+}
